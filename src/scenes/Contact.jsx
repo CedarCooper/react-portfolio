@@ -71,7 +71,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/cedar.m.cooper@gmail.com"
+            action="https://formsubmit.co/3156b6ef383a339c3bba2c68dc19ff94"
             method="POST"
           >
             <input
