@@ -25,7 +25,7 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
-          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href="https://github.com/CedarCooper">Github</a> to learn more about my {title}!
+          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href={`https://github.com/CedarCooper/${title.split(" ").join("")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about my {title}!
         </p>
       </div>
       <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80" />
