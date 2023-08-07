@@ -59,6 +59,7 @@ const Landing = ({ setSelectedPage }) => {
             Hi! My name is Cedar (like the tree) and it's great to meet you! I'm a data analyst with 5+ years in the field with experience
             in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to <i className="text-green">grow</i> your analytics!
           </p>
+          <p>Check out my Plum <a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-green hover:text-yellow">profile</a> to get to know me a bit more!</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
