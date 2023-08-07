@@ -74,13 +74,13 @@ const Projects = () => {
           
           {/* ROW 1 */}
           <Project title="Crunchy Case Study" />
-          <Project title="data2" />
+        { /* <Project title="data2" /> 
           <Project title="data2" />
 
-          {/* ROW 2 */}
+          {/* ROW 2 }
           <Project title="data3" />
           <Project title="data" />
-          <Project title="data2" />
+          <Project title="data2" /> */}
          
         </motion.div>
         </div>  

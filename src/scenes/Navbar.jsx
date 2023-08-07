@@ -52,6 +52,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+      <a href="/assets/Cedar_Cooper_Resume.pdf" type="button" className="flex bg-green py-3 px-5 font-soon
+              hover:bg-yellow text-white hover:text-deep-blue transition duration-500 rounded-md text-center" download><svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>Download CV</a>
+  
           </div>
         ) : (
           <button
