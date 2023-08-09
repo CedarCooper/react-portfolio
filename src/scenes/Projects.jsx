@@ -23,9 +23,9 @@ const Project = ({ title }) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href={`https://github.com/CedarCooper/${title.split(" ").join("")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about my {title}!
+        <p className="text-xl font-playfair">{title}</p>
+        <p className="mt45">
+          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about my {title}
         </p>
       </div>
       <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80" />
@@ -74,8 +74,8 @@ const Projects = () => {
           
           {/* ROW 1 */}
           <Project title="Crunchy Case Study" />
-        { /* <Project title="data2" /> 
-          <Project title="data2" />
+          <Project title="Study on LGBT Anxiety and Depression" /> 
+         {/* <Project title="data2" />
 
           {/* ROW 2 }
           <Project title="data3" />
