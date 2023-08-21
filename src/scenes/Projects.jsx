@@ -75,7 +75,7 @@ const Projects = () => {
           {/* ROW 1 */}
           <Project title="Crunchy Case Study" />
           <Project title="Study on LGBT Anxiety and Depression" /> 
-         {/* <Project title="data2" />
+          <Project title="Study on Pacific Island Landbirds" />
 
           {/* ROW 2 }
           <Project title="data3" />
