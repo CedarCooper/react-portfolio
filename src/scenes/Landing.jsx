@@ -14,8 +14,8 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-full
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-yellow before:z-[-1]"
           >
             <img
               alt="profile"
@@ -27,7 +27,7 @@ const Landing = ({ setSelectedPage }) => {
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            src="assets/me-bg-g.png"
           />
         )}
       </div>
@@ -48,16 +48,15 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-soon z-10 text-center md:text-start">
             Cedar {""}
             <span
-              className="xs:relative xs:text-green xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+              className="xs:relative xs:text-green xs:font-semibold"
             >
               Cooper &#x1F9D1;&#x200D;&#x1F4BB;
             </span>
           </p>
 
           <p className="mt-10 mb-7 text-md text-center md:text-start">
-            Hi! My name is Cedar (like the tree) and it's great to meet you! I'm a data analyst with 5+ years in the field with experience
-            in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to <i className="text-green">grow</i> your analytics!
+            Hi! My name is Cedar (like the tree) and it's great to meet you! I'm a Software Engineer and Data Analyst with 5+ years in the field with experience
+            in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to help your company <i className="text-green">grow</i>!
           </p>
           <p>Check out my Plum <a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-green hover:text-yellow">profile</a> to get to know me a bit more!</p>
         </motion.div>

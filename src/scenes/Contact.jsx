@@ -33,7 +33,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-soon font-semibold text-4xl">
-            <span className="text-green">&#x1F58D; CONTACT ME</span> TO CHAT
+            <span className="text-blue">&#x1F58D; CONTACT ME</span> TO CHAT
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />

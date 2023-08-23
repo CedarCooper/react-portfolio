@@ -13,8 +13,8 @@ const MySkills = () => {
       </div>
     )
   };
-
-  const skillIcons = ['Python', 'SQL', 'R', 'BigQuery', 'Excel', 'Tableau', 'Sheets', 'JIRA', 'Agile', 'Salesforce'];
+  // icons by Flaticon
+  const skillIcons = ['Python', 'SQL', 'R', 'JavaScript', 'Excel', 'React', 'Node', 'TypeScript', 'Salesforce', 'Ruby'];
   const allSkills = [];
   for (let i = 0; i < skillIcons.length; i++){
     allSkills.push(Skill(skillIcons[i]));
@@ -37,30 +37,28 @@ const MySkills = () => {
           }}
         >
           <p className="font-soon font-semibold text-4xl mb-5">
-          &#x1F4CA; MY <span className="text-green">SKILLS</span>
+          &#x1F9E0; MY <span className="text-blue">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            As a certified tech nerd, I am always exploring new tools and technologies. Here is a little peak at the hard and soft skills
+            As a certified tech enthusiast, I am always exploring new tools and technologies. Here is a little peak at the hard and soft skills
             that got me where I am today!</p><br /><br />
-            <p className="text-green">P.S. Hit me up if you want to chat about how cool R's variable declarations are!</p>
-          
         </motion.div>
 
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+              before:w-full before:h-full before:border-2 before:border-green before:z-[-1]"
             >
               <img
                 alt="yellow background with laptop showing a dashboard"
                 className="z-10 h-80"
-                src="assets/spread.jpg"
+                src="assets/fun-pic.png"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="/assets/spread.jpg" />
+            <img alt="skills" className="z-10" src="/assets/fun-pic.png" />
           )}
         </div>
       </div>

@@ -25,7 +25,7 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-xl font-playfair">{title}</p>
         <p className="mt45">
-          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about my {title}
+          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about {title}
         </p>
       </div>
       <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80" />
@@ -58,7 +58,7 @@ const Projects = () => {
         </div>
         <p className="mt-10 mb-10">
           Below is a list of some of the projects I've been working on. I believe always learning, following your passions, 
-          and supporting the open source community is essential to a healthy relationship with data.
+          and supporting the open source community is essential to a healthy relationship with technology.
         </p>
       </motion.div>
 
@@ -73,6 +73,7 @@ const Projects = () => {
         >
           
           {/* ROW 1 */}
+          <Project title="Docketeer" />
           <Project title="Crunchy Case Study" />
           <Project title="Study on LGBT Anxiety and Depression" /> 
           <Project title="Study on Pacific Island Landbirds" />
