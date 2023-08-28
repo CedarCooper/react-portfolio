@@ -45,7 +45,7 @@ const MySkills = () => {
             that got me where I am today!</p><br /><br />
         </motion.div>
 
-        <div className="mt-16 md:mt-0">
+        <div className="mt-16 md:mt-0 float-left">
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
@@ -54,7 +54,7 @@ const MySkills = () => {
               <img
                 alt="yellow background with laptop showing a dashboard"
                 className="z-10 h-80"
-                src="assets/fun-pic.png"
+                src="assets/3d-b.png"
               />
             </div>
           ) : (
