@@ -52,13 +52,13 @@ const MySkills = () => {
               before:w-full before:h-full before:border-2 before:border-green before:z-[-1]"
             >
               <img
-                alt="yellow background with laptop showing a dashboard"
+                alt="3d image of a computer"
                 className="z-10 h-80"
                 src="assets/3d-b.png"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="/assets/fun-pic.png" />
+            <img alt="skills" className="z-10" src="/assets/3d-b.png" />
           )}
         </div>
       </div>
