@@ -24,7 +24,7 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-xl font-playfair">{title}</p>
-        <p className="mt45">
+        <p className="mt-7">
           Checkout my <a className="text-green hover:bg-light-grey hover:text-blue" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about {title}
         </p>
       </div>
@@ -35,7 +35,7 @@ const Project = ({ title }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="mt-40 pt-48 pb-20">
+    <section id="projects" className="pt-60 pb-20 mt-48">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

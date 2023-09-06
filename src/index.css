@@ -4,15 +4,40 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#root,
-.app {
+/* desktop view */
+@media screen and (max-width: 2000px) {
+  html,
+  body,
+  #root,
+  .app {
     height: 100%;
-    background-image: url('./assets/hills.jpeg'); /* was cloud.jpg */
+    background-image: url('./assets/hills.jpeg'); 
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    @apply text-white;
+    color: white;
+  }
+}
+
+/* mobile view */
+@media screen and (max-width: 680px) {
+  html,
+  body,
+  #root,
+  .app {
+    height: 100%;
+    background-image: none;
+    background-color: #03233a;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+  }
+  #projects, #skills {
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }

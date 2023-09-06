@@ -45,20 +45,20 @@ const MySkills = () => {
             that got me where I am today!</p><br /><br />
         </motion.div>
 
-        <div className="mt-16 md:mt-0 float-left">
+        <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-green before:z-[-1]"
             >
               <img
-                alt="3d computer"
+                alt="programming books"
                 className="z-10 h-80 brightness-90"
                 src="assets/books.jpg"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="/assets/books.jpg" />
+            <img alt="programming books" className="z-10" src="/assets/books.jpg" />
           )}
         </div>
       </div>
@@ -67,7 +67,7 @@ const MySkills = () => {
         {allSkills}
 </div>
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-5 gap-32">
+      <div className="md:flex md:justify-between md:items-center md:h-full py-10 mt-5 gap-32">
         {/* EMPATHY */}
         <motion.div
           className="md:w-1/3 mt-10"
@@ -95,7 +95,7 @@ const MySkills = () => {
           </p>
         </motion.div>
 
-        {/* CURIOUSITY */}
+        {/* CURIOSITY */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
