@@ -9,7 +9,7 @@ body,
 #root,
 .app {
     height: 100%;
-    background-image: url('./assets/cloud.jpg');
+    background-image: url('./assets/hills.jpeg'); /* was cloud.jpg */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

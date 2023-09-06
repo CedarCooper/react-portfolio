@@ -2,13 +2,11 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({ page, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover:text-yellow transition duration-500`}
+      className={`text-white hover:text-light-grey transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -20,18 +18,18 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-green";
-
+  const navbarBackground = isTopOfPage ? "bg-grey bg-opacity-50" : "bg-green";
+  const textColor = isTopOfPage ? "text-blue" : "text-white";
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       
       
         <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-soon text-3xl font-bold">🪴 Meet Cedar</h4>
+        <h4 className={`font-soon text-3xl font-bold ${textColor}`}>🌲 Meet Cedar</h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold text-white">
             <Link
               page="Home"
               selectedPage={selectedPage}
@@ -52,8 +50,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-      <a href="/assets/Cedar-Cooper-Resume.pdf" type="button" className="flex bg-green py-3 px-5 font-soon
-              hover:bg-yellow text-white hover:text-deep-blue transition duration-500 rounded-md text-center" download><svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>Download CV</a>
+      <a href="/assets/Cedar-Cooper-Resume.pdf" type="button" className="flex bg-grey py-3 px-5 font-soon
+              hover:bg-blue text-white transition duration-500 rounded-md text-center" download><svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>Download Resume</a>
   
           </div>
         ) : (

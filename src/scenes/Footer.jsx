@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-10/12 mx-auto">
         <SocialMediaIcons />
         <div className="flex justify-center text-center">
-          <p className="font-soon text-md text-yellow">
+          <p className="font-soon text-md text-white">
             © 2023 Cedar Cooper. All Rights Reserved.
           </p>
         </div>

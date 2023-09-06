@@ -25,10 +25,10 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-xl font-playfair">{title}</p>
         <p className="mt45">
-          Checkout my <a className="text-green hover:bg-green hover:text-yellow" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about {title}
+          Checkout my <a className="text-green hover:bg-light-grey hover:text-blue" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about {title}
         </p>
       </div>
-      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80" />
+      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80 opacity-80 shadow-lg grayscale rounded-lg" /> {/* removed grayscale */}
     </motion.div>
   );
 };
@@ -49,8 +49,8 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-soon font-semibold text-4xl">&#x2B50;
-            <span className="text-green"> PRO</span>JECTS &#x2B50;
+          <p className="font-soon font-semibold text-4xl">&#x1F4C2;
+            <span className="text-green"> PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />

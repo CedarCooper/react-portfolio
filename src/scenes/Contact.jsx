@@ -33,7 +33,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-soon font-semibold text-4xl">
-            <span className="text-blue">&#x1F58D; CONTACT ME</span> TO CHAT
+            <span className="text-green">&#x1F58B; CONTACT ME</span> TO CHAT
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -54,7 +54,11 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/computer.png" alt="contact" className="h-80"/>
+          <div
+              className="relative before:absolute before:-top-10 before:-left-10
+              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+            >
+          <img src="../assets/mail.jpg" alt="white mailbox in field" className="h-80 brightness-90"/></div>
         </motion.div>
 
         <motion.div
@@ -127,7 +131,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 rounded-md bg-yellow font-soon font-semibold text-deep-blue mt-5 hover:bg-green hover:text-white transition duration-500"
+              className="p-5 rounded-md bg-green font-soon font-semibold text-white mt-5 hover:bg-blue transition duration-500"
               type="submit"
             >
               Send Me a Message

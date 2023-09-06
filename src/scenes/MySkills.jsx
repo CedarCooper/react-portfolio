@@ -8,7 +8,7 @@ const MySkills = () => {
   const Skill = (name) => {
     return ( 
       <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
-        <img src={`/assets/icons/${name}.png`} className="inline-block w-12 h-12 m-4" alt="" />
+        <img src={`/assets/icons2/${name}.png`} className="inline-block w-12 h-12 m-4" alt="" />
         <p className="font-soon opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-end">{name}</p> 
       </div>
     )
@@ -37,7 +37,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-soon font-semibold text-4xl mb-5">
-          &#x1F9E0; MY <span className="text-blue">SKILLS</span>
+          &#x1F4CA; MY <span className="text-blue">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -52,13 +52,13 @@ const MySkills = () => {
               before:w-full before:h-full before:border-2 before:border-green before:z-[-1]"
             >
               <img
-                alt="3d image of a computer"
-                className="z-10 h-80"
-                src="assets/3d-b.png"
+                alt="3d computer"
+                className="z-10 h-80 brightness-90"
+                src="assets/books.jpg"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="/assets/3d-b.png" />
+            <img alt="skills" className="z-10" src="/assets/books.jpg" />
           )}
         </div>
       </div>
@@ -87,7 +87,7 @@ const MySkills = () => {
                 Empathy
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-green absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
             Fostering open communication with agile methods and being understanding of individual 
@@ -111,10 +111,10 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-soon font-semibold text-5xl">02</p>
               <p className="font-soon font-semibold text-3xl mt-3">
-                Curiousity
+              Curiosity
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-green absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
             There is always more than one way to reach your goals. I try to keep that in mind when working on a project, to keep me curious of
@@ -140,7 +140,7 @@ const MySkills = () => {
                 Adaptability
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-light-grey absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
             Change is an inevitable step towards progress. Being receptive to new goals and alterations to current projects allows for a smooth

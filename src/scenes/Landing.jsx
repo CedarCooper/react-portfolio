@@ -15,19 +15,19 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-full
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-yellow before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
               className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/me-bg-g.png"
+              src="assets/outside.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/me-bg-g.png"
+            src="assets/outside.png"
           />
         )}
       </div>
@@ -58,7 +58,7 @@ const Landing = ({ setSelectedPage }) => {
             Hi! My name is Cedar (like the tree) and it's great to meet you! I'm a Software Engineer and Data Analyst with 5+ years in the field with experience
             in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to help your company <i className="text-green">grow</i>!
           </p>
-          <p>Check out my Plum <a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-green hover:text-yellow">profile</a> to get to know me a bit more!</p>
+          <p>Check out my Plum <a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-light-grey hover:text-blue">profile</a> to get to know me a bit more!</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
@@ -74,8 +74,8 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-yellow rounded-md text-deep-blue py-3 px-7 font-soon
-              hover:bg-green hover:text-white transition duration-500"
+            className="bg-green rounded-md text-white py-3 px-7 font-soon
+              hover:bg-blue transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
