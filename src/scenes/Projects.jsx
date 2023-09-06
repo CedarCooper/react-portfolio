@@ -49,14 +49,14 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-soon font-semibold text-4xl">&#x1F4C2;
+          <p className="font-soon font-semibold text-4xl drop-shadow-md">&#x1F4C2;
             <span className="text-green"> PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
+        <p className="mt-10 mb-10 drop-shadow-md">
           Below is a list of some of the projects I've been working on. I believe always learning, following your passions, 
           and supporting the open source community is essential to a healthy relationship with technology.
         </p>

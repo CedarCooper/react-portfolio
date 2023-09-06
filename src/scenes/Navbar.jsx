@@ -25,11 +25,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       
       
         <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className={`font-soon text-3xl font-bold ${textColor}`}>🌲 Meet Cedar</h4>
+        <h4 className={`font-soon text-3xl font-bold drop-shadow-md ${textColor}`}>🌲 Meet Cedar</h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold text-white">
+          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold text-white drop-shadow-md">
             <Link
               page="Home"
               selectedPage={selectedPage}
@@ -51,7 +51,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
       <a href="/assets/Cedar-Cooper-Resume.pdf" type="button" className="flex bg-blue py-3 px-5 font-soon
-              hover:bg-grey text-white transition duration-500 rounded-md text-center" download><svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>Download Resume</a>
+              hover:bg-grey text-white transition duration-500 rounded-md text-center drop-shadow-md" download><svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>Download Resume</a>
   
           </div>
         ) : (

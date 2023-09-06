@@ -9,7 +9,7 @@ const MySkills = () => {
     return ( 
       <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
         <img src={`/assets/icons2/${name}.png`} className="inline-block w-12 h-12 m-4" alt="" />
-        <p className="font-soon opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-end">{name}</p> 
+        <p className="font-soon opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-end drop-shadow-md text-light-grey"><b>{name}</b></p> 
       </div>
     )
   };
@@ -36,11 +36,11 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-soon font-semibold text-4xl mb-5">
+          <p className="font-soon font-semibold text-4xl mb-5 drop-shadow-md">
           &#x1F4CA; MY <span className="text-blue">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
+          <p className="mt-10 mb-7 drop-shadow-md">
             As a certified tech enthusiast, I am always exploring new tools and technologies. Here is a little peak at the hard and soft skills
             that got me where I am today!</p><br /><br />
         </motion.div>
@@ -63,7 +63,7 @@ const MySkills = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center place-items-center p-5 mt-5">
+      <div className="flex flex-wrap justify-center place-items-center p-5 mt-5 drop-shadow-md">
         {allSkills}
 </div>
       {/* SKILLS */}
@@ -80,16 +80,16 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-32 drop-shadow-md">
             <div className="z-10">
-              <p className="font-soon font-semibold text-5xl">01</p>
-              <p className="font-soon font-semibold text-3xl mt-3">
+              <p className="font-soon font-semibold text-5xl drop-shadow-md">01</p>
+              <p className="font-soon font-semibold text-3xl mt-3 drop-shadow-md">
                 Empathy
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-green absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
+          <p className="mt-5 drop-shadow-md">
             Fostering open communication with agile methods and being understanding of individual 
             needs and circumstances allows me to meet KPIs and keep a team-focused mindset.
           </p>
@@ -107,16 +107,16 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-32 drop-shadow-md">
             <div className="z-10">
-              <p className="font-soon font-semibold text-5xl">02</p>
-              <p className="font-soon font-semibold text-3xl mt-3">
+              <p className="font-soon font-semibold text-5xl drop-shadow-md">02</p>
+              <p className="font-soon font-semibold text-3xl mt-3 drop-shadow-md">
               Curiosity
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
+          <p className="mt-5 drop-shadow-md">
             There is always more than one way to reach your goals. I try to keep that in mind when working on a project, to keep me curious of
             new tools and possibilities.
           </p>
@@ -133,16 +133,16 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-32 drop-shadow-md">
             <div className="z-10">
-              <p className="font-soon font-semibold text-5xl">03</p>
-              <p className="font-soon font-semibold text-3xl mt-3">
+              <p className="font-soon font-semibold text-5xl drop-shadow-md">03</p>
+              <p className="font-soon font-semibold text-3xl mt-3 drop-shadow-md">
                 Adaptability
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-light-grey absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
+          <p className="mt-5 drop-shadow-md">
             Change is an inevitable step towards progress. Being receptive to new goals and alterations to current projects allows for a smooth
             transition. 
           </p>

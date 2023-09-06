@@ -18,15 +18,15 @@ const Landing = ({ setSelectedPage }) => {
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
-              alt="profile"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+              alt="cedar standing outside"
+              className="z-10 w-full max-w-[400px] md:max-w-[600px] drop-shadow-lg"
               src="assets/outside.png"
             />
           </div>
         ) : (
           <img
-            alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            alt="cedar standing outside"
+            className="z-10 w-full max-w-[400px] md:max-w-[600px] drop-shadow-lg"
             src="assets/outside.png"
           />
         )}
@@ -45,20 +45,20 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-soon z-10 text-center md:text-start">
+          <p className="text-6xl font-soon z-10 text-center md:text-start drop-shadow-md">
             Cedar {""}
             <span
-              className="xs:relative xs:text-green xs:font-semibold"
+              className="xs:relative xs:text-green xs:font-semibold drop-shadow-md"
             >
               Cooper &#x1F9D1;&#x200D;&#x1F4BB;
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-md text-center md:text-start">
+          <p className="mt-10 mb-7 text-md text-center md:text-start drop-shadow-md">
             Hi! My name is Cedar (like the tree) and it's great to meet you! I'm a Software Engineer and Data Analyst with 5+ years in the field with experience
-            in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to help your company <i className="text-green">grow</i>!
+            in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to help your company <i>grow</i>!
           </p>
-          <p>Check out my Plum <a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-light-grey hover:text-blue">profile</a> to get to know me a bit more!</p>
+          <p>Check out my Plum <b><a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-light-grey hover:text-blue drop-shadow-md underline">profile</a></b> to get to know me a bit more!</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
@@ -75,7 +75,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-green rounded-md text-white py-3 px-7 font-soon
-              hover:bg-blue transition duration-500"
+              hover:bg-blue transition duration-500 drop-shadow-md"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
