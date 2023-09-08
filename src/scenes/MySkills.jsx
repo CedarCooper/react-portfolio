@@ -14,7 +14,7 @@ const MySkills = () => {
     )
   };
   // icons by Flaticon
-  const skillIcons = ['Python', 'SQL', 'R', 'JavaScript', 'Excel', 'React', 'Node', 'TypeScript', 'Salesforce', 'Ruby'];
+  const skillIcons = ['Python', 'SQL', 'R', 'JavaScript', 'Excel', 'Tableau', 'React', 'Node', 'TypeScript', 'Salesforce', 'Ruby'];
   const allSkills = [];
   for (let i = 0; i < skillIcons.length; i++){
     allSkills.push(Skill(skillIcons[i]));

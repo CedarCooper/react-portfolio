@@ -18,6 +18,16 @@ const SocialMediaIcons = () => {
         >
           <img alt="github-link" src="../assets/icons2/github.svg" className="h-10 w-10" />
         </a>
+
+        <a
+          className="hover:opacity-50 transition duration-500"
+          href="https://public.tableau.com/app/profile/cedar.cooper"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img alt="tableau-link" src="../assets/icons2/Tableau.png" className="h-10 w-10"/>
+        </a>
+
       </div>
     );
   };

@@ -21,7 +21,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "bg-grey bg-opacity-50" : "bg-green";
   const textColor = isTopOfPage ? "text-blue" : "text-white";
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-5`}>
       
       
         <div className="flex items-center justify-between mx-auto w-5/6">
@@ -29,7 +29,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold text-white drop-shadow-md">
+          <div className="flex justify-between gap-20 font-opensans text-sm font-semibold text-white drop-shadow-md">
             <Link
               page="Home"
               selectedPage={selectedPage}
