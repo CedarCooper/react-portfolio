@@ -15,19 +15,19 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-full
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-sky before:z-[-1]"
           >
             <img
-              alt="cedar standing outside"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px] drop-shadow-lg"
-              src="assets/outside.png"
+              alt="cedar standing  near a lighthouse"
+              className="z-10 w-full max-w-[400px] md:max-w-[450px] drop-shadow-lg"
+              src="assets/round-lighthouse.png"
             />
           </div>
         ) : (
           <img
-            alt="cedar standing outside"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px] drop-shadow-lg"
-            src="assets/outside.png"
+            alt="cedar standing near a lighthouse"
+            className="z-10 w-full max-w-[400px] md:max-w-[450px] drop-shadow-lg"
+            src="assets/round-lighthouse.png"
           />
         )}
       </div>
@@ -48,9 +48,9 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-soon z-10 text-center md:text-start drop-shadow-md">
             Cedar {""}
             <span
-              className="xs:relative xs:text-green xs:font-semibold drop-shadow-md"
+              className="xs:relative xs:text-orange xs:font-semibold drop-shadow-md"
             >
-              Cooper &#x1F9D1;&#x200D;&#x1F4BB;
+              Cooper &#x1F427;
             </span>
           </p>
 
@@ -58,7 +58,7 @@ const Landing = ({ setSelectedPage }) => {
             Hi! My name is Cedar (like the tree) and it's great to meet you! I'm a Software Engineer and Data Analyst with 5+ years in the field with experience
             in health, e-commerce, and agriculture. I'd love to chat and have the opportunity to help your company <i>grow</i>!
           </p>
-          <p>Check out my Plum <b><a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-green hover:bg-light-grey hover:text-blue drop-shadow-md underline">profile</a></b> to get to know me a bit more!</p>
+          <p>Check out my Plum <b><a href="https://secure.plum.io/p/8QWCgAJSAzWCeMPBTdW8cg" target="_blank" rel="noreferrer noopener" className="text-grass hover:bg-orange hover:text-sky drop-shadow-md underline">profile</a></b> to get to know me a bit more!</p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
@@ -74,8 +74,8 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-green rounded-md text-white py-3 px-7 font-soon
-              hover:bg-blue transition duration-500 drop-shadow-md"
+            className="bg-grass rounded-md text-white py-3 px-7 font-soon
+              hover:bg-sky transition duration-500 drop-shadow-md"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >

@@ -9,7 +9,7 @@ const MySkills = () => {
     return ( 
       <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
         <img src={`/assets/icons2/${name}.png`} className="inline-block w-12 h-12 m-4" alt="" />
-        <p className="font-soon opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-end drop-shadow-md text-light-grey"><b>{name}</b></p> 
+        <p className="font-soon opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-end drop-shadow-md text-sky"><b>{name}</b></p> 
       </div>
     )
   };
@@ -37,7 +37,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-soon font-semibold text-4xl mb-5 drop-shadow-md">
-          &#x1F4CA; MY <span className="text-blue">SKILLS</span>
+          &#x1F4CA; MY <span className="text-sky">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 drop-shadow-md">
@@ -48,17 +48,17 @@ const MySkills = () => {
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
             <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-green before:z-[-1]"
+              className="relative before:absolute before:-top-10 before:-left-10
+              before:w-5/6 before:h-full before:border-2 before:border-grass before:z-[-1]"
             >
               <img
-                alt="programming books"
-                className="z-10 h-80 brightness-90"
-                src="assets/books.jpg"
+                alt="a computer with programming ide and programming languages in bubbles"
+                className="z-10 h-80 mr-60"
+                src="assets/computer.jpg"
               />
             </div>
           ) : (
-            <img alt="programming books" className="z-10" src="/assets/books.jpg" />
+            <img alt="a computer with programming ide and programming languages in bubbles" className="z-10" src="/assets/fun-pic.png" />
           )}
         </div>
       </div>
@@ -87,7 +87,7 @@ const MySkills = () => {
                 Empathy
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-green absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-grass absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 drop-shadow-md">
             Fostering open communication with agile methods and being understanding of individual 
@@ -114,7 +114,7 @@ const MySkills = () => {
               Curiosity
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-sky absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 drop-shadow-md">
             There is always more than one way to reach your goals. I try to keep that in mind when working on a project, to keep me curious of
@@ -140,7 +140,7 @@ const MySkills = () => {
                 Adaptability
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-light-grey absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-orange absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 drop-shadow-md">
             Change is an inevitable step towards progress. Being receptive to new goals and alterations to current projects allows for a smooth

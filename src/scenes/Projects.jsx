@@ -16,8 +16,8 @@ const projectVariant = {
 };
 
 const Project = ({ title }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-60 hover:bg-white transition duration-500
+    z-30 flex flex-col justify-center items-center text-center p-16 text-deep-sky rounded-lg`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
@@ -25,10 +25,10 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-xl font-playfair">{title}</p>
         <p className="mt-7">
-          Checkout my <a className="text-green hover:bg-light-grey hover:text-blue" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about {title}
+          Checkout my <a className="text-sky bg-orange hover:text-orange hover:bg-sky" href={`https://github.com/CedarCooper/${title.split(" ").join("-")}` } target="_blank" rel="noreferrer noopener">Github</a> to learn more about {title}
         </p>
       </div>
-      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80 opacity-80 shadow-lg grayscale rounded-lg" /> {/* removed grayscale */}
+      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle} className="h-48 w-80 opacity-100 shadow-lg rounded-lg" />
     </motion.div>
   );
 };
@@ -49,8 +49,8 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-soon font-semibold text-4xl drop-shadow-md">&#x1F4C2;
-            <span className="text-green"> PRO</span>JECTS
+          <p className="font-soon font-semibold text-4xl drop-shadow-md">&#x1F5C2;
+            <span className="text-orange"> PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />

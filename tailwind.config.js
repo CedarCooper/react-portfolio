@@ -5,10 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#004481",
-        green: "#6e9a40",
+        sky: "#1B8CCF",
+        grass:"#4da227",
+        orange: "#FDC618",
+        sunny: "#efcd1f",
         grey: "#768692",
-        "deep-blue": "#010026",
+        "deep-sky": "#1B4F72",
         "dark-grey": "#757575",
         "light-grey": "#BEC3C6",
         "opaque-black": "rgba(0,0,0,0.35)"
@@ -16,8 +18,8 @@ module.exports = {
       visibility: ["group-hover"], 
    
       backgroundImage: (theme) => ({
-        "gradient-rainblue":
-          "linear-gradient(90deg, #004481 14.53%, #757575 69.36%, #BEC3C6 107.73%)"
+        "gradient-bgy":
+          "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red)"
       }),
       fontFamily: {
         playfair: ["Playfair Display", 'serif'],

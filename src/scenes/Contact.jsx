@@ -33,7 +33,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-soon font-semibold text-4xl drop-shadow-md">
-            <span className="text-green">&#x1F58B; CONTACT ME</span> TO CHAT
+            <span className="text-grass">&#x1F58D; CONTACT ME</span> TO CHAT
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -56,9 +56,9 @@ const Contact = () => {
         >
           <div
               className="relative before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+              before:w-full before:h-full before:border-2 before:border-sky before:z-[-1]"
             >
-          <img src="../assets/mail.jpg" alt="white mailbox in field" className="h-80 brightness-90"/></div>
+          <img src="../assets/mailbox.jpg" alt="red cartoon mailbox in yard" className="h-80"/></div>
         </motion.div>
 
         <motion.div
@@ -79,7 +79,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-soon placeholder-white p-3 rounded-md"
+              className="w-full bg-sky font-soon placeholder-white p-3 rounded-md"
               type="text"
               placeholder="Name"
               {...register("name", {
@@ -88,14 +88,14 @@ const Contact = () => {
               })}
             />
             {errors.name && (
-              <p className="text-green mt-1">
+              <p className="text-grass mt-1">
                 {errors.name.type === "required" && "This field is required."}
                 {errors.name.type === "maxLength" && "Max length is 100 char."}
               </p>
             )}
 
             <input
-              className="w-full bg-blue font-soon placeholder-white p-3 mt-5 rounded-md"
+              className="w-full bg-sky font-soon placeholder-white p-3 mt-5 rounded-md"
               type="email"
               placeholder="E-mail"
               {...register("email", {
@@ -104,14 +104,14 @@ const Contact = () => {
               })}
             />
             {errors.email && (
-              <p className="text-green mt-1">
+              <p className="text-grass mt-1">
                 {errors.email.type === "required" && "This field is required."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
 
             <textarea
-              className="w-full bg-blue font-soon placeholder-white p-3 mt-5 rounded-md"
+              className="w-full bg-sky font-soon placeholder-white p-3 mt-5 rounded-md"
               name="message"
               placeholder="Message"
               rows="4"
@@ -122,7 +122,7 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <p className="text-green mt-1">
+              <p className="text-grass mt-1">
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
@@ -131,7 +131,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 rounded-md bg-green font-soon font-semibold text-white mt-5 hover:bg-blue transition duration-500 drop-shadow-md"
+              className="p-5 rounded-md bg-grass font-soon font-semibold text-white mt-5 hover:bg-sky transition duration-500 drop-shadow-md"
               type="submit"
             >
               Send Me a Message
